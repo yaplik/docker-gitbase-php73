@@ -53,3 +53,6 @@ RUN rpm -ivh http://rpms.remirepo.net/enterprise/remi-release-7.rpm && \
     php73-php-xml \
     php73-php-pecl-ssh2 && \
   yum clean all -y
+
+# override php.ini
+ADD php.ini /etc/opt/remi/php73/php.ini
